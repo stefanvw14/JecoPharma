@@ -180,6 +180,7 @@
   <ItemGroup>
     <Content Include="App_Data\JeCoPharmaDB.mdf" />
     <Content Include="App_Data\JeCoPharmaDB_log.ldf" />
+    <Content Include="Css\grondstoffen.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -190,9 +191,7 @@
     </Content>
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="style\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
