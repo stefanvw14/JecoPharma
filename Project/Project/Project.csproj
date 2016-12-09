@@ -191,7 +191,9 @@
     </Content>
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\Apotheker\index.cshtml" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
@@ -218,6 +220,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Conflict\index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Apotheker\EAVUitlezen.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Apotheker\ApothekerOverzicht.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
