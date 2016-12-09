@@ -167,9 +167,14 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\ApothekerController.cs" />
+    <Compile Include="Controllers\ConflictController.cs" />
+    <Compile Include="Controllers\GrondstofController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ConflictModel.cs" />
+    <Compile Include="Models\GrondstofModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -186,12 +191,34 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="style\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Grondstof\GrondstofToevoegen.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Grondstof\GrondstofOverzicht.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Grondstof\GrondstofVerwijderen.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Grondstof\index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Conflict\ConflictOverzicht.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Conflict\ConflictToevoegen.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Conflict\ConflictVerwijderen.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Conflict\index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
