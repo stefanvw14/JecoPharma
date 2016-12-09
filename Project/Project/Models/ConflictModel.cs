@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data;
 
-namespace JecoPharma.Models
+namespace Project.Models
 {
     public class ConflictModel
     {
