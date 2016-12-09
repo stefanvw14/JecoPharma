@@ -3,15 +3,71 @@
 }
 
 <!DOCTYPE html>
-
-<html>
+<html lang="nl">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
+    <meta charset="utf-8">
+    <title>JeCo Pharma</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link href="~/Css/reset.css" rel="stylesheet">
+    <link href="~/Css/grondstoffen.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="Js/menu.js"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" type="text/css" href="/Js/fontawesome/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
 </head>
 <body>
-    <div>
-    
+    <header>
+        <div class="container">
+            <div class="header_left">
+                <a href="Index"><i class="fa fa-home"></i></a>
+                <p>
+                    Welkom: Maya de Groot<br />
+                    ID: 234153
+                </p>
+            </div>
+            <div class="header_center">
+                <p>
+                    @ViewBag.Datum<br />
+                    Grondstoffen
+                </p>
+            </div>
+            <div class="header_right">
+                <a href="#" id="drop_menu">
+                    <i class="fa fa-user-md"></i>
+                    <p>JeCo Pharma</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="side">
+            <a href=/Grondstof/GrondstofOverzicht><div class="side_nav">Grondstoffen Overzicht</div></a>
+            <a href=/Grondstof/GrondstofToevoegen><div class="side_nav">Grondstof Toevoegen</div></a>
+            <a href=/Grondstof/GrondstofVerwijderen><div class="side_nav">Grondstof Verwijderen</div></a>
+            <a href=/Conflict/index><div class="side_nav">Conflicten Bewerken</div></a>
+            <div class="button_side">
+                <a href="#" title="uitloggen" alt="uitloggen" class="button_uitloggen">Uitloggen</a>
+            </div>
+        </div>
+        <div class="modules">
+            <a href="/Grondstof/GrondstofOverzicht"><div class="module_4"><p>Grondstoffen Overizcht</p></div></a>
+            <a href="/Grondstof/GrondstofToevoegen"><div class="module_5"><p>Grondstof Toevoegen</p></div></a>
+            <a href="/Grondstof/GrondstofVerwijderen"><div class="module_6"><p>Grondstof Verwijderen</p></div></a>
+        </div>
     </div>
+    <footer>
+        <div class="container">
+            <p>JecoPharma</p>
+        </div>
+    </footer>
 </body>
 </html>

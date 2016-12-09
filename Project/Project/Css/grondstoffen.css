@@ -1,2 +1,189 @@
-﻿body {
+﻿/*Stylesheet*/
+
+/* De kleurcodes per functie:
+ - Arts: #2490e2 & #4aaef9
+ - Verpleegkundige: #ffa500 & #ffb630
+ - Apotheker: #60BA1B & #80dd39
+*/
+
+body {
+    margin:0;
+	font-family:arial;
+	font-size:11pt;
+    color:black;
+	text-decoration:none;
+}
+.container {
+	margin: auto;
+	width: 96%;
+}
+/*header*/
+header{
+    width:100%;
+    float:left;
+    background-color:#2f2f2f;
+    padding:25px 0px 25px 0px;
+}
+header p{
+    color:#80dd39;
+}
+.header_left, .header_right{
+    width:33.3%;
+    float:left;
+}
+.header_left p{
+    padding-top: 5px;
+    line-height: 17px;
+    margin-left: 55px;
+}
+.header_center{
+    width:33.4%;
+    float:left;
+    text-align:center;
+    padding-top:1px;
+    line-height:20px;
+}
+.header_right{
+    text-align:right;
+}
+.fa-home{
+    float:left;
+    color:#60BA1B;
+    font-size:3em!important;
+}
+.fa-user-md{
+    color:#60BA1B;
+    font-size:2em!important;
+}
+.fa-home:hover{
+    color:white;
+}
+a{
+    text-decoration:none;
+}
+/*main*/
+.main{
+    float:left;
+    width:100%;
+}
+.side{
+    float:left;
+    width:20%;
+    background-color:#f7f7f7;
+    padding-top:50px;
+    height:530px;
+}
+.side_nav{
+    color:#60BA1B;
+    padding:20px 0px 20px 11%;
+}
+.side_nav:hover{
+    background-color:#60BA1B;
+    color:white;
+}
+.button_side{
+    float:left;
+    margin-top:150px;
+    margin-left:11%;
+}
+.button_uitloggen{
+    color:white;
+    padding:10px 30px 10px 30px;
+    background-color:#620000;
+}
+.modules{
+    float:left;
+    width:80%;
+}
+.module_1, .module_2, .module_3, .module_4, .module_5, .module_6{
+    float:left;
+    width:20%;
+    background-color:#80dd39;
+    text-align:center;
+    border-radius:2px;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:65px;
+    color:white;
+    box-shadow: 1px 1px 5px darkgray;
+}
+.module_1 p, .module_2 p, .module_3 p, .module_4 p, .module_5 p, .module_6 p{
+    margin:70px 0px 70px 0px;
+}
+
+footer {
+    width: 100%;
+    color: #80dd39;
+    float: left;
+    background-color: #2f2f2f;
+    padding: 25px 0px 25px 0px;
+}
+
+/*Tabel voor grondstoffen*/
+.lijst{
+    border: 2px solid;
+    border-color:#60BA1B;
+    margin-left: 2em;
+    margin-top: 2em;
+    float: left;
+    width: 30%;
+    background-color: #e3f9d2;
+}
+
+.grondstofnummer {
+    text-align: left;
+    border: 2px solid;
+    border-color:#60BA1B;
+    padding-left: 30px;
+}
+
+.grondstofnaam {
+    padding-left: 30px;
+    border: 2px solid;
+    border-color:#60BA1B;
+}
+
+th {
+    border: 2px solid;
+    border-color:#60BA1B;
+    text-align: left;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+/*Grondstof Toevoegen formulier*/
+.add_form {
+    margin-left: 2em;
+    margin-top: 2em;
+    float: left;
+    width: 300px;
+    border: 2px solid;
+    border-color: #60BA1B;
+    height: 200px;
+    border-radius: 30px;
+    background-color: #e3f9d2;
+}
+
+#wisknop {
+    margin-left: 0.5em;
+    margin-top: 1em;
+}
+
+#opslaan {
+    margin-top: 0.5em;
+}
+
+#invoer_grondstof {
+    margin-top: 0.5em;
+}
+
+fieldset {
+    padding: 3em;
+}
+
+.Hoofdkop {
+    margin-left: 22em;
+    margin-top: 2em;
+    font-size: 16px;
+    color: #60BA1B;
 }
