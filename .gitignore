@@ -236,5 +236,5 @@ _Pvt_Extensions
 .fake/
 
 #Visual studio project files
-*.pyproj
+*.csproj
 *.sln
