@@ -40,7 +40,7 @@ namespace Project.Models
                 grondstof.Naam = row["naam"].ToString();
                 grondstoffen.Add(grondstof);
             }
-            return grondstoffen;
+            return grondstoffen; //commit
         }
 
     }
