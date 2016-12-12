@@ -11,7 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Project.Models;
-
+/*
 namespace Project
 {
     public class EmailService : IIdentityMessageService
@@ -107,3 +107,4 @@ namespace Project
         }
     }
 }
+*/

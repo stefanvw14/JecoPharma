@@ -27,7 +27,7 @@ namespace Project.Controllers // wijzigen bij invoegen Bit Bucket
 
         public ActionResult ConflictOverzicht()
         {
-            ViewBag.conflicten = JecoPharma.Models.ConflictModel.getAll();
+            ViewBag.conflicten = Project.Models.ConflictModel.getAll();
             return View();
         }
 
