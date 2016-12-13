@@ -25,6 +25,12 @@ namespace Project.Models
             get { return naam; }
         }
 
+        // BEGIN door Lucas Rob
+        public GrondstofModel()
+        {
+            grondstof_id = -1;
+            naam = "";
+        }
 
         public static List<GrondstofModel> getAll()
         {
@@ -40,8 +46,8 @@ namespace Project.Models
                 grondstof.Naam = row["naam"].ToString();
                 grondstoffen.Add(grondstof);
             }
-            return grondstoffen; //commit
+            return grondstoffen;
         }
-
+        // EINDE
     }
 }

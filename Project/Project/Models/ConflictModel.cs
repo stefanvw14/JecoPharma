@@ -13,6 +13,11 @@ namespace Project.Models
         private int grondstof_id1;
         private int grondstof_id2;
 
+        //constructor
+        public ConflictModel()
+        {
+            
+        }
 
         //Property van grondstofnummer en naam
         public int Grondstof_id1
