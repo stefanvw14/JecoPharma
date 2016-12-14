@@ -1,6 +1,6 @@
 ﻿@{
     Layout = null;
-    List<JecoPharma.Models.GrondstofModel> grondstoffen = ViewBag.grondstof;
+    List<Project.Models.GrondstofModel> grondstoffen = ViewBag.grondstof;
 }
 <!DOCTYPE html>
 <html lang="nl">
@@ -62,14 +62,12 @@
                 <th>Grondstofnummer</th>
                 <th>Naam</th>
             </tr>
-            @foreach (JecoPharma.Models.GrondstofModel grondstof in grondstoffen)
+            @foreach (Project.Models.GrondstofModel grondstof in grondstoffen)
             {
                 <tr>
                     <td>@grondstof.Grondstof_id</td>
                     <td>@grondstof.Naam</td>
                 </tr>
-            }
-
             }
         </table>
     </div>

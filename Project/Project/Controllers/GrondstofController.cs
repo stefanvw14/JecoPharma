@@ -31,5 +31,12 @@ namespace Project.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Toevoegen(string naam)
+        {
+            //GrondstofModel nieuweGrondstof = new Grondstof();
+
+            return View("Index");
+        }
     }
 }
