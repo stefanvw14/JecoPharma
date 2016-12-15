@@ -50,25 +50,13 @@ namespace Project.Models
             }
             return grondstoffen;
         }
-        // auteur: Roy Willemse
-        // Gemaakt om van gekozen medicijnen de grondstoffen op te halen zodat er vervolgens gekeken kan worden naar allergieen.
-        public static List<GrondstofModel> getFromMedicijn(int medicijn_id)
+
+        public void GrondstofOpslaan()
         {
-            string query = "SELECT g.grondstof_id, g.naam, gr.hoeveelheid FROM Grondstof g INNER JOIN GrondstofRegel gr on g.grondstof_id = gr.grondstof_id WHERE gr.medicijn_id = @p0";
-            object[] parameters = { medicijn_id };
-            DataTable dt = DatabaseModel.select(query, parameters);
+            GrondstofModel nieuweGrondstof = new GrondstofModel();
+            
 
-            List<GrondstofModel> grondstoffen = new List<GrondstofModel>();
-            foreach (DataRow row in dt.Rows)
-            {
-                GrondstofModel grondstof = new GrondstofModel();
-                grondstof.Grondstof_id = int.Parse(row["grondstof_id"].ToString());
-                grondstof.Naam = row["naam"].ToString();
-                grondstoffen.Add(grondstof);
-            }
-            return grondstoffen;
         }
-
 
 
         // EINDE

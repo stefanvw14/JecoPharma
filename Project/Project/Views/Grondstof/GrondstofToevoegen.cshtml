@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = null;
+
 }
 
 <!DOCTYPE html>
@@ -58,18 +58,8 @@
             </div>
         </div>
         <p class="Hoofdkop">Grondstof Toevoegen</p>
-        @using (Html.BeginForm("Toevoegen", "GrondstofModel", FormMethod.Post, new { @class = "add_form" }))
-        {
-            <fieldset>
-                <p>Grondstofnaam:</p>
-                <p>
-                    <input type="text" id="invoer" name="txt_naam" placeholder="Voer de naam in.." required />
-                </p>
-                <br />
-                <input type="submit" value="Opslaan" />
-            </fieldset>
-        }
-        @*<form class="add_form">
+               
+         <form class="add_form">
             <fieldset>
                 <p>Grondstofnaam:</p>
                 <p>
@@ -78,7 +68,7 @@
                 <br />
                 <input type="submit" id="button" name="btn_submit" value="Opslaan" />
                 <input type="reset" id="button" name="btn_reset" value="Wissen" />
-            </fieldset>*@
+            </fieldset>
         </form>
     </div>
     <footer>
