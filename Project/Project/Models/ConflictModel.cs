@@ -56,5 +56,24 @@ namespace Project.Models
             }
             return conflicten;
         }
+
+        //stefan onderdeel
+        public static List<ConflictModel> getAdd()
+        {
+            string query = "INSERT INTO Conflict(grondstof_id, )";
+            object[] parameters = { };
+            DataTable dt = DatabaseModel.select(query, parameters); //TBD
+
+            List<ConflictModel> conflicten = new List<ConflictModel>();
+            foreach (DataRow row in dt.Rows)
+            {
+                ConflictModel conflict = new ConflictModel();
+                conflict.Conflict_id = int.Parse(row["conflict_id"].ToString());
+                conflict.grondstof_id1 = int.Parse(row["grondstof_id1"].ToString());
+                conflict.grondstof_id2 = int.Parse(row["grondstof_id2"].ToString());
+                conflicten.Add(conflict);
+            }
+            return conflicten;
+        }
     }
 }

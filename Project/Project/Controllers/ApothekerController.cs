@@ -15,15 +15,15 @@ namespace Project.Controllers
             return View();
         }
 
-        public ActionResult EAVSamenstellen()
+        public ActionResult EAVUitlezen()
         {
             return View();
         }
 
-        public ActionResult EAVWijzigen()
+        /*public ActionResult EAVWijzigen()
         {
             return View();
-        }
+        }*/
 
         /*public ActionResult ConflictVerwijderen()
         {

@@ -58,6 +58,18 @@
             </div>
         </div>
     </div>
+    <p class="Hoofdkop">Grondstof Toevoegen</p>
+    @using (Html.BeginForm("Toevoegen", "GrondstofModel", FormMethod.Post, new { @class = "add_form" }))
+    {
+        <fieldset>
+            <p>Grondstofnaam:</p>
+            <p>
+                <input type="text" id="invoer" name="txt_naam" placeholder="Voer de naam in.." required />
+            </p>
+            <br />
+            <input type="submit" value="Opslaan" />
+        </fieldset>
+    }
     <footer>
         <div class="container">
             <p>JecoPharma</p>
