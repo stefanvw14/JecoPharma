@@ -57,16 +57,17 @@
                 <a href="#" title="uitloggen" alt="uitloggen" class="button_uitloggen">Uitloggen</a>
             </div>
         </div>
-        <table id="Grondstoflijst" class="tabel_grondstoflijst" cellspacing="10" cellpadding="10">
+        <p class="Hoofdkop">Grondstof Overzicht</p>
+        <table id="Grondstoflijst" cellspacing="10" cellpadding="10">
             <tr>
-                <th>Grondstofnummer</th>
-                <th>Naam</th>
+                <th id="grondstofnummer">Grondstofnummer</th>
+                <th id="grondstofnaam">Naam</th>
             </tr>
             @foreach (Project.Models.GrondstofModel grondstof in grondstoffen)
             {
                 <tr>
-                    <td>@grondstof.Grondstof_id</td>
-                    <td>@grondstof.Naam</td>
+                    <td class="tabel_inhoud">@grondstof.Grondstof_id</td>
+                    <td class="tabel_inhoud">@grondstof.Naam</td>
                 </tr>
             }
         </table>

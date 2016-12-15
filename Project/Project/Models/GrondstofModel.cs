@@ -34,10 +34,10 @@ namespace Project.Models
 
         // auteur: Roy Willemse
         // Gemaakt om van gekozen medicijnen de grondstoffen op te halen zodat er vervolgens gekeken kan worden naar allergieen.
-        public static List<GrondstofModel> getFromMedicijn(int medicijn_id)
+        public static List<GrondstofModel> getAll()
         {
-            string query = "SELECT g.grondstof_id, g.naam, gr.hoeveelheid FROM Grondstof g INNER JOIN GrondstofRegel gr on g.grondstof_id = gr.grondstof_id WHERE gr.medicijn_id = @p0";
-            object[] parameters = { medicijn_id };
+            string query = "SELECT * FROM Grondstof";
+            object[] parameters = { };
             DataTable dt = DatabaseModel.select(query, parameters);
 
             List<GrondstofModel> grondstoffen = new List<GrondstofModel>();
@@ -49,6 +49,13 @@ namespace Project.Models
                 grondstoffen.Add(grondstof);
             }
             return grondstoffen;
+        }
+
+        public void GrondstofOpslaan()
+        {
+            GrondstofModel nieuweGrondstof = new GrondstofModel();
+            
+
         }
 
 

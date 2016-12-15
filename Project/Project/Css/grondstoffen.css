@@ -120,35 +120,42 @@ footer {
 }
 
 /*Tabel voor grondstoffen*/
-.lijst{
+#Grondstoflijst{
     border: 2px solid;
     border-color:#60BA1B;
     margin-left: 2em;
     margin-top: 2em;
     float: left;
-    width: 30%;
+    width: 35%;
     background-color: #e3f9d2;
 }
 
-.grondstofnummer {
+#grondstofnummer {
     text-align: left;
     border: 2px solid;
     border-color:#60BA1B;
-    padding-left: 30px;
-}
-
-.grondstofnaam {
-    padding-left: 30px;
-    border: 2px solid;
-    border-color:#60BA1B;
-}
-
-th {
-    border: 2px solid;
-    border-color:#60BA1B;
-    text-align: left;
     padding-left: 30px;
     font-weight: bold;
+}
+
+#grondstofnaam {
+    padding-left: 20px;
+    border: 2px solid;
+    border-color:#60BA1B;
+    font-weight: bold;
+}
+
+#verwijder {
+    padding-left: 1px;
+    border: 2px solid;
+    border-color:#60BA1B;
+    font-weight: bold;
+}
+
+.tabel_inhoud {
+    padding-left: 15px;
+    border: 2px solid;
+    border-color:#60BA1B;
 }
 
 /*Grondstof Toevoegen formulier*/
